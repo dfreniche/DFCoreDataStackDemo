@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Entity" syncable="YES"/>
     <entity name="Project" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Task" representedClassName="Task">
+    <entity name="SpanishPolitician" syncable="YES">
+        <attribute name="money" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Task">
         <attribute name="dueDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <userInfo/>
     </entity>
     <elements>
         <element name="Project" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="SpanishPolitician" positionX="-162" positionY="-90" width="128" height="73"/>
         <element name="Task" positionX="-324" positionY="-198" width="128" height="73"/>
+        <element name="Entity" positionX="-128" positionY="-198" width="128" height="43"/>
     </elements>
 </model>

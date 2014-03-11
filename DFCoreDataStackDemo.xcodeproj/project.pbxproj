@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9930B87118BA7DA30052EBE0 /* DFCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9930B87018BA7DA30052EBE0 /* DFCoreDataStack.m */; };
 		999A198B18BA537600AD8F47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999A198A18BA537600AD8F47 /* Foundation.framework */; };
 		999A198D18BA537600AD8F47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999A198C18BA537600AD8F47 /* CoreGraphics.framework */; };
 		999A198F18BA537600AD8F47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 999A198E18BA537600AD8F47 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9930B86F18BA7DA30052EBE0 /* DFCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCoreDataStack.h; sourceTree = "<group>"; };
+		9930B87018BA7DA30052EBE0 /* DFCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCoreDataStack.m; sourceTree = "<group>"; };
 		999A198718BA537600AD8F47 /* DFCoreDataStackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DFCoreDataStackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		999A198A18BA537600AD8F47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		999A198C18BA537600AD8F47 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,6 +64,7 @@
 		999A19BA18BA537600AD8F47 /* DFCoreDataStackDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DFCoreDataStackDemoTests-Info.plist"; sourceTree = "<group>"; };
 		999A19BC18BA537600AD8F47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		999A19BE18BA537600AD8F47 /* DFCoreDataStackDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFCoreDataStackDemoTests.m; sourceTree = "<group>"; };
+		99BA33C718BB45C90042581A /* DFCoreDataStackDemo 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DFCoreDataStackDemo 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9930B86E18BA7D940052EBE0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9930B86F18BA7DA30052EBE0 /* DFCoreDataStack.h */,
+				9930B87018BA7DA30052EBE0 /* DFCoreDataStack.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		999A197E18BA537600AD8F47 = {
 			isa = PBXGroup;
 			children = (
@@ -125,13 +138,11 @@
 			children = (
 				999A199B18BA537600AD8F47 /* CDDAppDelegate.h */,
 				999A199C18BA537600AD8F47 /* CDDAppDelegate.m */,
-				999A199E18BA537600AD8F47 /* Main.storyboard */,
-				999A19A418BA537600AD8F47 /* CDDMasterViewController.h */,
-				999A19A518BA537600AD8F47 /* CDDMasterViewController.m */,
-				999A19A718BA537600AD8F47 /* CDDDetailViewController.h */,
-				999A19A818BA537600AD8F47 /* CDDDetailViewController.m */,
+				9930B86E18BA7D940052EBE0 /* Util */,
+				999A19C818BA560400AD8F47 /* View */,
+				999A19C918BA560D00AD8F47 /* Controller */,
 				999A19AA18BA537600AD8F47 /* Images.xcassets */,
-				999A19A118BA537600AD8F47 /* DFCoreDataStackDemo.xcdatamodeld */,
+				999A19CA18BA561400AD8F47 /* Model */,
 				999A199318BA537600AD8F47 /* Supporting Files */,
 			);
 			path = DFCoreDataStackDemo;
@@ -164,6 +175,33 @@
 				999A19BB18BA537600AD8F47 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		999A19C818BA560400AD8F47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				999A199E18BA537600AD8F47 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		999A19C918BA560D00AD8F47 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				999A19A418BA537600AD8F47 /* CDDMasterViewController.h */,
+				999A19A518BA537600AD8F47 /* CDDMasterViewController.m */,
+				999A19A718BA537600AD8F47 /* CDDDetailViewController.h */,
+				999A19A818BA537600AD8F47 /* CDDDetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		999A19CA18BA561400AD8F47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				999A19A118BA537600AD8F47 /* DFCoreDataStackDemo.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				999A199D18BA537600AD8F47 /* CDDAppDelegate.m in Sources */,
+				9930B87118BA7DA30052EBE0 /* DFCoreDataStack.m in Sources */,
 				999A19A318BA537600AD8F47 /* DFCoreDataStackDemo.xcdatamodeld in Sources */,
 				999A19A918BA537600AD8F47 /* CDDDetailViewController.m in Sources */,
 				999A19A618BA537600AD8F47 /* CDDMasterViewController.m in Sources */,
@@ -477,6 +516,7 @@
 				999A19C418BA537600AD8F47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		999A19C518BA537600AD8F47 /* Build configuration list for PBXNativeTarget "DFCoreDataStackDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +525,7 @@
 				999A19C718BA537600AD8F47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -492,6 +533,7 @@
 		999A19A118BA537600AD8F47 /* DFCoreDataStackDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				99BA33C718BB45C90042581A /* DFCoreDataStackDemo 2.xcdatamodel */,
 				999A19A218BA537600AD8F47 /* DFCoreDataStackDemo.xcdatamodel */,
 			);
 			currentVersion = 999A19A218BA537600AD8F47 /* DFCoreDataStackDemo.xcdatamodel */;
